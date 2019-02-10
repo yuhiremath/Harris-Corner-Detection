@@ -25,7 +25,7 @@ Implementation of Corner detection using opencv
 
 ### Cornerness score is thresholded
 * Here the R(Cornerness Score) values above 5 times of mean of R are considered.
-* Although, there are different ways of thresholding.
+* Alternatively, different types of thresholding can be used.
 
 ### Performing Non-Maximum Suppression
 * If cornerness score of a pixel is lower than all 8 of it's neighbors, then it is set to 0.
