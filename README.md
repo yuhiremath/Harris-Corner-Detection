@@ -24,7 +24,7 @@ Implementation of Corner detection using opencv
 * <i> The theory related to the above calculation can be found in this page --> https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_features_harris/py_features_harris.html </i>
 
 ### Cornerness score is thresholded
-* Here the R(Cornerness Score) only values above 5 times of mean of R is considered.
+* Here the R(Cornerness Score) values above 5 times of mean of R are considered.
 * Although, there are different ways of thresholding.
 
 ### Performing Non-Maximum Suppression
