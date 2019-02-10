@@ -64,12 +64,12 @@ def extract_keypoints(image):
 
 
         (X, Y) = np.where(R != 0)
-        return [X, Y, R[X,Y], Ix, Iy]
+        return [X, Y, R[X,Y]]
 
 
 if __name__ == "__main__":
     image = 'panda1.jpg'
-    [X, Y, R, Ix, Iy] = extract_keypoints(image)
+    [X, Y, R] = extract_keypoints(image)
     R = (R/np.max(R))*100
     im = cv2.imread(image, 0)
     fig, ax  = plt.subplots(1)
