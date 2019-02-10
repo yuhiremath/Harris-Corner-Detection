@@ -13,12 +13,8 @@ def extract_keypoints(image):
         window_size = 5
         
         #reading the image as a grayscale image
-        if(type(image) == str):
-                image_gray = cv2.imread(image, 0)
-        else:
-                #This is for part7 where the input parameter is 100x100 black and white image
-                image_gray = image
-
+        image_gray = cv2.imread(image, 0)
+        
         Ix = cv2.Sobel(image_gray, cv2.CV_64F, 1, 0)
         Iy = cv2.Sobel(image_gray, cv2.CV_64F, 0, 1)
         
