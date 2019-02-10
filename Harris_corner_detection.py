@@ -19,7 +19,7 @@ def extract_keypoints(image):
         Ix = cv2.Sobel(image_gray, cv2.CV_64F, 1, 0)
         Iy = cv2.Sobel(image_gray, cv2.CV_64F, 0, 1)
         
-        #corness score will be stored in this image
+        #cornerness score will be stored in this image
         R = np.zeros(image_gray.shape)
 
         #the range starts from 2 so that R values withing 2 at top/left and bottom/right is kept as 0
