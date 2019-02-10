@@ -15,6 +15,7 @@ def extract_keypoints(image):
         #reading the image as a grayscale image
         image_gray = cv2.imread(image, 0)
         
+        #Calculating image gradients in x and y direction
         Ix = cv2.Sobel(image_gray, cv2.CV_64F, 1, 0)
         Iy = cv2.Sobel(image_gray, cv2.CV_64F, 0, 1)
         
