@@ -6,8 +6,10 @@ import matplotlib.cm as cm
 import pandas as pd
 
 def extract_keypoints(image):
-        #setting the parameters
+        #setting the constant that will be used for calculating cornerness score
         k = 0.05
+        
+        #window size being considered
         window_size = 5
         
         #reading the image as a grayscale image
